@@ -6,12 +6,6 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     distDir: process.env.NODE_ENV === 'production' ? '.next' : '.next-dev',
-    allowedDevOrigins: [
-        'localhost',
-        '127.0.0.1',
-        'fly.dev',
-        'builder.codes',
-    ],
     webpack: (config, { isServer }) => {
         if (!isServer) {
             config.module.rules.push({
