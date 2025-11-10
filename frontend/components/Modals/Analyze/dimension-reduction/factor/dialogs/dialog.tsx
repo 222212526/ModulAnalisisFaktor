@@ -353,6 +353,12 @@ export const FactorDialog = ({
                         <Button
                             type="button"
                             variant="secondary"
+                        >
+                            Paste
+                        </Button>
+                        <Button
+                            type="button"
+                            variant="secondary"
                             onClick={onReset}
                         >
                             Reset
